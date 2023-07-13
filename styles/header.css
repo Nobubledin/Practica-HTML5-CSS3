@@ -1,0 +1,16 @@
+.imagen_cabecera {
+    width: 50%;
+    float: left;
+}
+
+.imagen_cabecera img {
+    height: 200px;
+    width: auto;
+}
+
+.enlaces {
+    float: right;
+    width: 50%;
+    text-align: right;
+}
+
