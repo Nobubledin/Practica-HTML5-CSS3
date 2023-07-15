@@ -1,0 +1,60 @@
+input {
+    margin-top: 3px;
+}
+
+#colegio {
+    margin-bottom: 50px;
+}
+
+textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.selector {
+    margin: 10px 0 10px 0;
+}
+
+#newsletter {
+    margin: 10px 0 15px 0;
+}
+
+@media (max-width: 768px) {
+    main {
+        margin: 5px;
+    }
+    #mensaje {
+        width: 90%;
+    }
+}
+
+@media (min-width: 769px) {
+    .grupo1 {
+        width: 50%;
+        float: left;
+    }
+    .grupo2 {
+        width: 50%;
+        float: right;
+    }
+
+#escritura {
+    height: 25px;
+}
+
+.skill1 {
+    float: left;
+    width: 30%;
+}
+
+.skill2 {
+    float: center;
+    width: 30%;
+}
+
+.skill3 {
+    float: right;
+    width: 30%;
+}
+
+}

@@ -10,42 +10,84 @@
     <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body class="main-bg">
-    <header class="navegacion">
+    <header class="cabecera">
         <div class="imagen_cabecera">
-            <img src="./assets/portfolio/Andrzej_Sapkowski.JPG" alt="Imagen cabecera">
+            <img id="retrato" src="./assets/portfolio/Andrzej_Sapkowski.JPG" alt="Imagen cabecera">
         </div>
-        <div class="enlaces">
-            <a href="proyectos.html">Proyectos</a>
-            <a href="skills.html">Skills</a>
-            <a href="contacto.html">Contactame</a>
+        <div class="header_nav">
+            <div class="nav_list">
+                <button class="dropbtn">Menu</button>
+                    <div class="dropdown_content">
+                        <a href="skills.html">Habilidades</a>
+                        <a href="contacto.html">Contactame</a>
+                        <a href="proyectos.html">Proyectos</a>
+                    </div>
+            </div>
         </div>
     </header>
+    <hr>
     <main>
         <h1>Andrzej Sapkowski</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque inventore vel unde perspiciatis voluptate modi recusandae hic ab deserunt nostrum, incidunt eius quas ipsam voluptas odio sed impedit, voluptates doloribus!</p>
+        <p>Andrzej Sapkowski es un escritor polaco de fantasía heroica. Sus obras están fuertemente influenciadas por la cultura y mitología eslavas, así como por las narraciones tradicionales.1​ Su estilo de escritura es fluido y directo adaptando el lenguaje popular de la Polonia actual.</p>
+        <h1>Habilidades</h1>
+
+        <div class="skill1">
+        <p>Escritura</p>
+        <progress id="escritura" value="90" max="100"></progress>
+
+        <p>Skill2</p>
+        <progress id="escritura" value="90" max="100"></progress>
+
+    </div>
+
+    <div class="skill2"></div>
+
+        <p>Skill3</p>
+        <progress id="escritura" value="90" max="100"></progress>
+
+        <p>Skill4</p>
+        <progress id="escritura" value="90" max="100"></progress>
+    </div>
+
+    <div class="skill3"></div>
+        <p>Skill5</p>
+        <progress id="escritura" value="90" max="100"></progress>
+
+        <p>Skill6</p>
+        <progress id="escritura" value="90" max="100"></progress>
+    </div>
+
+
+
         <form class="form" method="post" action="registro.html">
-            <label for="nombre">Nombre:</label><br/>
-            <input type="text" id="nombre" name="nombre" value="Andrzej" required><br/>
+            <div>
+            <div class="grupo1">
+                <label for="nombre">Nombre:</label><br/>
+                <input type="text" id="nombre" name="nombre" value="Andrzej" required><br/><br/>
             
-            <label for="apellidos">Apellidos:</label><br/>
-            <input type="text" id="apellidos" name="apellidos" value="Sapkowski" required><br/>
-            
+                <label for="apellidos">Apellidos:</label><br/>
+                <input type="text" id="apellidos" name="apellidos" value="Sapkowski" required><br/><br/>
+        </div>
+        
+        <div class="grupo2">
             <label for="telefono">Teléfono:</label><br/>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br/>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br/><br/>
 
             <label for="usuario">Usuario de Github:</label><br/>
-            <input type="text" id="usuario" name="usuario" pattern="^@[^\s]+" required><br/>
+            <input type="text" id="usuario" name="usuario" pattern="^@[^\s]+" required><br/><br/>
 
-            <label for="mensaje">Más información</label><br/>
-            <textarea maxlength="180" rows="15" cols="75" id="mensaje" name="mensaje" required>Solicita más información aquí</textarea>
-
+        </div>
+        </div>
             <p>¿Cómo lo conociste?</p>
-            <input type="radio" id="universidad" name="respuesta" value="Universidad">
+            <input class="selector" type="radio" id="universidad" name="respuesta" value="Universidad">
             <label for="universidad">Universidad</label><br/>
-            <input type="radio" id="keepCoding" name="respuesta" value="KeepCoding Kick-off">
+            <input class="selector" type="radio" id="keepcoding" name="respuesta" value="KeepCoding Kick-off">
             <label for="keepcoding">KeepCoding Kick-off</label><br/>
-            <input type="radio" id="colegio" name="respuesta" value="Colegio">
+            <input class="selector" type="radio" id="colegio" name="respuesta" value="Colegio">
             <label for="colegio">Colegio</label><br/>
+
+            <label id="mensaje" for="mensaje">Más información</label><br/>
+            <textarea maxlength="180" rows="15" cols="90" id="mensaje" name="mensaje" required>Solicita más información aquí</textarea><br/>
 
             <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter">
             <label for="newsletter">Quiero acceso a la newsletter</label><br/>
@@ -55,8 +97,8 @@
             <input type="reset" id="reset" value="Borrar">
         </form>
     </main>
-    <footer hidden class="redes">
-        <a href="https://www.youtube.com"><img src="./assets/portfolio/YouTube.png"></a>
+    <footer class="redes">
+        <a href="https://www.youtube.com"><img id="youtube" src="./assets/portfolio/YouTube.png"></a>
         <a href="instagram.com"></a>
         <a href="twitter.com"></a>
     </footer>
