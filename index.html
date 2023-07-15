@@ -21,21 +21,38 @@
         </div>
     </header>
     <main>
-        <hr>
         <h1>Andrzej Sapkowski</h1>
-        <form>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque inventore vel unde perspiciatis voluptate modi recusandae hic ab deserunt nostrum, incidunt eius quas ipsam voluptas odio sed impedit, voluptates doloribus!</p>
+        <form class="form" method="post" action="registro.html">
             <label for="nombre">Nombre:</label><br/>
-            <input type="text" id="nombre" name="nombre" value="Andrzej"><br/>
-
+            <input type="text" id="nombre" name="nombre" value="Andrzej" required><br/>
+            
             <label for="apellidos">Apellidos:</label><br/>
-            <input type="text" id="apellidos" name="apellidos" value="Sapkowski"><br/>
+            <input type="text" id="apellidos" name="apellidos" value="Sapkowski" required><br/>
+            
+            <label for="telefono">Teléfono:</label><br/>
+            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br/>
 
-            <label for="nombre">Teléfono:</label><br/>
-            <input type="tel" id="tel" name="tel"><br/>
+            <label for="usuario">Usuario de Github:</label><br/>
+            <input type="text" id="usuario" name="usuario" pattern="^@[^\s]+" required><br/>
 
-            <label for="pregunta">¿Cómo lo conociste?:</label><br/>
-            <input type="radio" id="nombre" name="pregunta" value="Universidad"><br/>
-            <input type="radio" id="respuesta2" name="respuesta2" value="KeepCoding Kick-off">
+            <label for="mensaje">Más información</label><br/>
+            <textarea maxlength="180" rows="15" cols="75" id="mensaje" name="mensaje" required>Solicita más información aquí</textarea>
+
+            <p>¿Cómo lo conociste?</p>
+            <input type="radio" id="universidad" name="respuesta" value="Universidad">
+            <label for="universidad">Universidad</label><br/>
+            <input type="radio" id="keepCoding" name="respuesta" value="KeepCoding Kick-off">
+            <label for="keepcoding">KeepCoding Kick-off</label><br/>
+            <input type="radio" id="colegio" name="respuesta" value="Colegio">
+            <label for="colegio">Colegio</label><br/>
+
+            <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter">
+            <label for="newsletter">Quiero acceso a la newsletter</label><br/>
+        
+
+            <input type="submit" id="submit" value="Guardar">
+            <input type="reset" id="reset" value="Borrar">
         </form>
     </main>
     <footer hidden class="redes">
@@ -45,4 +62,3 @@
     </footer>
 </body>
 </html>
-
