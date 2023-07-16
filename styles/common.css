@@ -30,6 +30,16 @@ textarea {
     margin-left: 10%;
 }
 
+.enlace {
+    transition-property: background-color;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+.enlace:hover {
+    background-color: black;
+}
+
 @media (max-width: 425px) {
     main {
         margin: 5px;

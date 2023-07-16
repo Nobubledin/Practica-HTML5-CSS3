@@ -12,9 +12,8 @@
     }
 }
 
-.proyectos {
-    width: 100%;
-    margin-left: 5%;
+main {
+    margin: 10%;
 }
 
 h6 {
@@ -22,18 +21,22 @@ h6 {
 }
 
 @media (max-width: 425px) {
-    main {
-        margin: 5px;
-    }
     iframe {
         width: 100%;
         height: 300px;
     }
-    .libro{
-        width: 50%;
+    .portada{
+        width: 95%;
         height: auto;
-}
-    
+    }
+    .proyectos {
+        width: 100%;
+    }
+    .libro {
+        display: inline-block;
+        width: 45%;
+        height: auto;
+    }
 }
 
 @media (min-width: 426px) {
@@ -41,8 +44,17 @@ h6 {
         width: 100%;
         height: 500px;
     }   
-.libro{
-    width: 30%;
-    height: auto;
-}
+    .libro{
+        width: 30%;
+        height: auto;
+    }
+    .portada{
+        width: 80%;
+        height: auto;
+    }
+    .libro {
+        display: inline-block;
+        width: 30%;
+        height: auto;
+    }
 }
