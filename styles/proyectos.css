@@ -1,0 +1,48 @@
+.fade-in{
+    opacity: 0;
+    animation: fadeInAnimation 2.5s ease-in forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }    
+    100% {
+        opacity: 1;
+    }
+}
+
+.proyectos {
+    width: 100%;
+    margin-left: 5%;
+}
+
+h6 {
+    margin-top: 0;
+}
+
+@media (max-width: 425px) {
+    main {
+        margin: 5px;
+    }
+    iframe {
+        width: 100%;
+        height: 300px;
+    }
+    .libro{
+        width: 50%;
+        height: auto;
+}
+    
+}
+
+@media (min-width: 426px) {
+    iframe {
+        width: 100%;
+        height: 500px;
+    }   
+.libro{
+    width: 30%;
+    height: auto;
+}
+}
