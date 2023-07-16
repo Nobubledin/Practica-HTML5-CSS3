@@ -12,72 +12,73 @@
 <body class="main-bg">
     <header class="cabecera">
         <div class="imagen_cabecera">
-            <img id="retrato" src="./assets/portfolio/Andrzej_Sapkowski.JPG" alt="Imagen cabecera">
+            <img id="retrato" src="./assets/portfolio/Geralt.png" alt="Imagen cabecera">
         </div>
         <div class="header_nav">
             <div class="nav_list">
                 <button class="dropbtn">Menu</button>
                     <div class="dropdown_content">
-                        <a href="skills.html">Habilidades</a>
-                        <a href="contacto.html">Contactame</a>
                         <a href="proyectos.html">Proyectos</a>
+                        <a href="skills.html">Habilidades</a>
+                        <a href="contacto.html">Contacto</a>
                     </div>
             </div>
         </div>
     </header>
     <hr>
     <main>
-        <h1>Andrzej Sapkowski</h1>
-        <p>Andrzej Sapkowski es un escritor polaco de fantasía heroica. Sus obras están fuertemente influenciadas por la cultura y mitología eslavas, así como por las narraciones tradicionales.1​ Su estilo de escritura es fluido y directo adaptando el lenguaje popular de la Polonia actual.</p>
-        <h1>Habilidades</h1>
-
-        <div class="skill1">
-        <p>Escritura</p>
-        <progress id="escritura" value="90" max="100"></progress>
-
-        <p>Skill2</p>
-        <progress id="escritura" value="90" max="100"></progress>
-
+    <div class="personaje">
+        <h1>Geralt de Rivia</h1>
+        <p>Geralt of Rivia fue un legendario brujo de la Escuela del Lobo activo durante el siglo XIII. Amaba a la hechicera Yennefer, considerada el amor de su vida a pesar de su tumultuosa relación, y se convirtió en el padre adoptivo de Ciri.</p>
     </div>
+        <div class="habilidades">
+            <h1>Habilidades</h1>
+            <div class="skill">
+                <p>Caza de Monstruos</p>
+                <progress value="85" max="100"></progress>
+                <p>Romance</p>
+                <progress value="29" max="100"></progress>
+            </div>  
 
-    <div class="skill2"></div>
+            <div class="skill">
+                 <p>Montar a caballo</p>
+                <progress  value="57" max="100"></progress>
+                <p>Magia</p>
+                <progress  value="12" max="100"></progress>
+            </div>
 
-        <p>Skill3</p>
-        <progress id="escritura" value="90" max="100"></progress>
+            <div class="skill">
+                <p>Rastreo</p>
+                <progress value="41" max="100"></progress>
+                <p>Creación de Pociones</p>
+                <progress value="73" max="100"></progress>
+            </div>
+        </div>
 
-        <p>Skill4</p>
-        <progress id="escritura" value="90" max="100"></progress>
-    </div>
+        <div class="contenedor_imagen">
+            <img id="imagen_fondo" src="./assets/portfolio/background.jpg" alt="fondo">
+            <div class="texto_imagen">
+                <h4>Presentación para Geralt de Rivia</h4>
+            </div>
+        </div>
 
-    <div class="skill3"></div>
-        <p>Skill5</p>
-        <progress id="escritura" value="90" max="100"></progress>
-
-        <p>Skill6</p>
-        <progress id="escritura" value="90" max="100"></progress>
-    </div>
-
-
-
-        <form class="form" method="post" action="registro.html">
-            <div>
+        <form method="post" action="registro.html">
+        <div class="formulario">
             <div class="grupo1">
                 <label for="nombre">Nombre:</label><br/>
-                <input type="text" id="nombre" name="nombre" value="Andrzej" required><br/><br/>
-            
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br/><br/>
                 <label for="apellidos">Apellidos:</label><br/>
-                <input type="text" id="apellidos" name="apellidos" value="Sapkowski" required><br/><br/>
-        </div>
+                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos" required><br/><br/>
+            </div>
         
-        <div class="grupo2">
-            <label for="telefono">Teléfono:</label><br/>
-            <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" required><br/><br/>
-
-            <label for="usuario">Usuario de Github:</label><br/>
-            <input type="text" id="usuario" name="usuario" pattern="^@[^\s]+" required><br/><br/>
-
+            <div class="grupo2">
+                <label for="telefono">Teléfono:</label><br/>
+                <input type="tel" id="telefono" name="telefono" placeholder="111 111 111" pattern="[0-9]{3} [0-9]{3} [0-9]{3}" required><br/><br/>
+                <label for="usuario">Usuario de Github:</label><br/>
+                <input type="text" id="usuario" name="usuario" pattern="^@[^\s]+" required><br/><br/>
+            </div>
         </div>
-        </div>
+        <div class="opciones">
             <p>¿Cómo lo conociste?</p>
             <input class="selector" type="radio" id="universidad" name="respuesta" value="Universidad">
             <label for="universidad">Universidad</label><br/>
@@ -85,22 +86,23 @@
             <label for="keepcoding">KeepCoding Kick-off</label><br/>
             <input class="selector" type="radio" id="colegio" name="respuesta" value="Colegio">
             <label for="colegio">Colegio</label><br/>
-
-            <label id="mensaje" for="mensaje">Más información</label><br/>
-            <textarea maxlength="180" rows="15" cols="90" id="mensaje" name="mensaje" required>Solicita más información aquí</textarea><br/>
+        </div>
+        <div class="mensaje">
+            <label for="mensaje">Más información</label><br/>
+            <textarea maxlength="180" rows="15" cols="80" id="mensaje" name="mensaje" required>Solicita más información aquí</textarea><br/>
 
             <input type="checkbox" id="newsletter" name="newsletter" value="Newsletter">
             <label for="newsletter">Quiero acceso a la newsletter</label><br/>
-        
 
             <input type="submit" id="submit" value="Guardar">
             <input type="reset" id="reset" value="Borrar">
+        </div>
         </form>
     </main>
     <footer class="redes">
         <a href="https://www.youtube.com"><img id="youtube" src="./assets/portfolio/YouTube.png"></a>
-        <a href="instagram.com"></a>
-        <a href="twitter.com"></a>
+        <a href="instagram.com"><img id="instagram" src="./assets/portfolio/Instagram.png"></a>
+        <a href="twitter.com"><img id="twitter" src="./assets/portfolio/Twitter.png"></a>
     </footer>
 </body>
 </html>

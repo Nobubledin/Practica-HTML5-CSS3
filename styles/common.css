@@ -2,8 +2,9 @@ input {
     margin-top: 3px;
 }
 
-#colegio {
-    margin-bottom: 50px;
+.personaje, .opciones, .mensaje {
+    width: 80%;
+    margin-left: 10%;
 }
 
 textarea {
@@ -19,16 +20,39 @@ textarea {
     margin: 10px 0 15px 0;
 }
 
-@media (max-width: 768px) {
+.formulario {
+    width: 80%;
+    margin-left: 10%;
+}
+
+.habilidades {
+    width: 80%;
+    margin-left: 10%;
+}
+
+@media (max-width: 425px) {
     main {
         margin: 5px;
     }
     #mensaje {
         width: 90%;
     }
+    .contenedor_imagen {
+        margin-top: 30px;
+        position: relative;
+        display: inline-block;
+        height: 300px;
+    }
+    .texto_imagen {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 426px) {
     .grupo1 {
         width: 50%;
         float: left;
@@ -37,24 +61,30 @@ textarea {
         width: 50%;
         float: right;
     }
+    progress {
+        height: 20px;
+    }
+    .skill {
+        width: 30%;
+        height: 200px;
+        display: inline-block;
+        box-sizing: border-box;
+    }
+    .contenedor_imagen {
+        position: relative;
+        display: inline-block;
+    }
+    .texto_imagen {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
 
-#escritura {
-    height: 25px;
-}
-
-.skill1 {
-    float: left;
-    width: 30%;
-}
-
-.skill2 {
-    float: center;
-    width: 30%;
-}
-
-.skill3 {
-    float: right;
-    width: 30%;
-}
-
+    #imagen_fondo {
+        width: 80%;
+        margin-left: 10%;
+        content:url(/assets/portfolio/background2.jpg)
+    }
 }
